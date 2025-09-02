@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Club | Resources</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #0a1f44;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #132f63;
+      flex-wrap: wrap;
+      padding: 18px 0;
+    }
+    nav a {
+      color: white;
+      padding: 20px 30px;
+      text-decoration: none;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 1.3em;
+      transition: all 0.3s ease;
+      position: relative;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      background: #0a1f44;
+      color: #fff;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 8px;
+      width: 0;
+      height: 3px;
+      background: #0a1f44;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(10,31,68,0.85), rgba(10,31,68,0.85)),
+                  url('quantum_computer.png') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin: 0;
+      font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #0a1f44;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    /* Alternating section backgrounds */
+    .alt {
+      background: #e0e6f2;
+    }
+
+    /* Cards for SDKs/Tools */
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      width: 300px;
+      padding: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+      transform: translateY(-5px);
+    }
+    .card .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #132f63;
+      font-size: 1.5em;
+    }
+    .card p {
+      color: #333;
+      font-size: 0.95em;
+      min-height: 60px;
+    }
+    
+    /* Button */
+    .btn-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #132f63;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .btn-link:hover {
+      background: #0a1f44;
+      transform: translateY(-3px);
+    }
+
+    /* Resource List for papers/courses */
+    .resource-list {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .resource-item {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border-left: 5px solid #132f63;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .resource-item h4 {
+      margin: 0 0 5px;
+      font-size: 1.3em;
+      color: #0a1f44;
+    }
+    .resource-item p {
+      margin: 0 0 10px;
+      color: #333;
+    }
+    .resource-item a {
+      color: #132f63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .resource-item a:hover {
+      text-decoration: underline;
+    }
+    
+    footer {
+      background: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quantum Club at<br>C.V. Raman Global University</h1>
+    <p>Where Curiosity Meets Quantum</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="members.html">Members</a>
+    <a href="join.html">Join</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+    <a href="resources.html">Resources</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Quantum Resources</h1>
+    <p>Your gateway to learning tools, research papers, and more.</p>
+  </div>
+
+  <section>
+    <h2>Developer Kits & Simulators</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.M73fFEEWVdY8dOkqxm40cgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Qiskit Logo" class="logo">
+        <h3>Qiskit</h3>
+        <p>An open-source SDK for working with quantum computers at the level of circuits, pulses, and algorithms.</p>
+        <a href="https://qiskit.org/" class="btn-link" target="_blank" rel="noopener noreferrer">Visit Qiskit</a>
+      </div>
+      <div class="card">
+        <img src="https://avatars.githubusercontent.com/u/33331339?s=280&v=4" alt="Cirq Logo" class="logo">
+        <h3>Google Cirq</h3>
+        <p>A Python library for writing, manipulating, and optimizing quantum circuits and running them on quantum computers.</p>
+        <a href="https://quantumai.google/cirq" class="btn-link" target="_blank" rel="noopener noreferrer">Visit Cirq</a>
+      </div>
+      <div class="card">
+        <img src="https://cjec.anecs-cjec.org/wp-content/uploads/sites/5/2022/11/pennylane-2.png" alt="PennyLane Logo" class="logo">
+        <h3>PennyLane</h3>
+        <p>A cross-platform Python library for differentiable programming of quantum computers.
+        </p>
+        <a href="https://pennylane.ai/" class="btn-link" target="_blank" rel="noopener noreferrer">Visit PennyLane</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <h2>Foundational Papers & Textbooks</h2>
+    <div class="resource-list">
+      <div class="resource-item">
+        <h4>Quantum Computation and Quantum Information</h4>
+        <p>Often called "Mike and Ike," this is the standard textbook for the field of quantum computing, by Nielsen and Chuang.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">View Textbook &rarr;</a>
+      </div>
+      <div class="resource-item">
+        <h4>Shor's Algorithm (1994)</h4>
+        <p>Peter Shor's groundbreaking paper on a quantum algorithm for factoring integers, a problem intractable for classical computers.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Read Paper &rarr;</a>
+      </div>
+      <div class="resource-item">
+        <h4>Grover's Algorithm (1996)</h4>
+        <p>Lov Grover's quantum search algorithm that provides a quadratic speedup over classical search algorithms for unstructured data.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Read Paper &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Learn Quantum Computing</h2>
+    <div class="resource-list">
+      <div class="resource-item">
+        <h4>Qiskit Global Summer School</h4>
+        <p>An annual two-week intensive program by IBM Quantum to introduce the basics of quantum computing and programming with Qiskit.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Learn More &rarr;</a>
+      </div>
+      <div class="resource-item">
+        <h4>Coursera: Quantum Computing Courses</h4>
+        <p>A collection of courses from various universities covering the theory and application of quantum computation.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Browse Courses &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Quantum Club - C.V. Raman Global University | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

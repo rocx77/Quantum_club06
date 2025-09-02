@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Club | Contact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0a1f44;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #132f63;
+      flex-wrap: wrap;
+      padding: 18px 0;
+    }
+    nav a {
+      color: white;
+      padding: 20px 30px;
+      text-decoration: none;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 1.3em;
+      transition: all 0.3s ease;
+      position: relative;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      background: #0a1f44;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 8px;
+      width: 0;
+      height: 3px;
+      background: #0a1f44;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(10,31,68,0.85), rgba(10,31,68,0.85)),
+                  url('contact.png') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+    .hero p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      color: #0a1f44;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      background: #f8f9fb;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #132f63;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .contact-form button {
+      background: #132f63;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: glow 2s infinite alternate;
+    }
+    .contact-form button:hover {
+      background: #0a1f44;
+      transform: translateY(-2px);
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 5px #00aaff; }
+      to   { box-shadow: 0 0 20px #00aaff; }
+    }
+
+    /* Info Section */
+    .info {
+      background: #132f63;
+      color: white;
+      padding: 50px 20px;
+      margin-top: 40px;
+    }
+    .info h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .info p {
+      font-size: 1.2em;
+      margin: 8px 0;
+    }
+
+    footer {
+      background: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Quantum Club at<br>C.V. Raman Global University</h1>
+    <p>Where Curiosity Meets Quantum</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="members.html">Members</a>
+    <a href="join.html">Join</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
+    <a href="resources.html">Resources</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out with questions, collaborations, or ideas.</p>
+  </div>
+
+  <!-- Contact Form Section -->
+  <section>
+    <h2>Get in Touch</h2>
+    <div class="contact-form">
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="info">
+    <h2>Our Contact Details</h2>
+    <p><strong>Email:</strong> quantumclub@cvrgu.ac.in</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Location:</strong> C.V. Raman Global University, Bhubaneswar, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Quantum Club - C.V. Raman Global University | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
